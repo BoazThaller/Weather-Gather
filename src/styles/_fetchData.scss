@@ -1,0 +1,96 @@
+.locationCard {
+    border: 3px solid black;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    width: 200px;
+    height: auto;
+    background-color: #ecf5ed;
+    box-shadow: rgb(0 0 0 / 25%) 0px 54px 55px, rgb(0 0 0 / 12%) 0px -12px 30px, rgb(0 0 0 / 12%) 0px 4px 6px, rgb(0 0 0 / 17%) 0px 12px 13px, rgb(0 0 0 / 9%) 0px -3px 5px;
+}
+
+.locationsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.wind {
+    margin-left: 20px;
+}
+
+.windContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 13px;
+}
+
+.tempContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 13px;
+}
+
+.cityContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 13px;
+}
+
+.humidityContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    margin-top: 20px;
+}
+
+.loader {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 9999;
+  /* display: none; */
+}
+
+.loader::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 48%;
+  top: 40%;
+  width: 100px;
+  height: 100px;
+  border-style: solid;
+  border-color: black;
+  border-top-color: transparent;
+  border-width: 4px;
+  border-radius: 50%;
+  -webkit-animation: spin 0.8s linear infinite;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .locationsContainer {
+      flex-direction: column;
+    }
+
+}

@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+} 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+img {
+    width: 100px;
+}
+
+body {
+background-image: url("https://expertnov.ru/800/600/https/krot.info/uploads/posts/2020-10/1603895198_8-p-oblachnii-fon-13.jpg");
+background-size: cover
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
